@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Daily Workflow</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- LEFT PANEL -->
+
+    <div class="left-panel">
+
+        <!-- Progress -->
+
+        <div class="widget">
+
+            <h3>DAILY TARGET</h3>
+
+            <div class="progress-ring">
+
+                <svg width="180" height="180">
+
+                    <circle
+                    class="bg"
+                    cx="90"
+                    cy="90"
+                    r="75"/>
+
+                    <circle
+                    id="progressCircle"
+                    class="progress"
+                    cx="90"
+                    cy="90"
+                    r="75"/>
+
+                </svg>
+
+                <div id="progressText">
+                    0%
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Calendar -->
+
+        <div class="widget">
+
+            <h3>CALENDAR</h3>
+
+            <div id="calendar"></div>
+
+        </div>
+
+        <div class="widget">
+
+            <h3>MONTHLY GRAPH</h3>
+
+            <canvas id="monthlyChart"></canvas>
+
+        </div>
+
+        <!-- Statistics -->
+
+        <div class="widget">
+
+            <h3>MONTH STATUS</h3>
+
+            <div class="stats">
+
+                <div>
+                    🔥 Current Streak :
+                    <span id="currentStreak">0</span>
+                </div>
+
+                <div>
+                    🔥 Best Streak :
+                    <span id="bestStreak">0</span>
+                </div>
+
+                <div>
+                    Average :
+                    <span id="avgProgress">0%</span>
+                </div>
+
+                <div>
+                    Best :
+                    <span id="bestDay">0%</span>
+                </div>
+
+                <div>
+                    Days :
+                    <span id="completedDays">0</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT PANEL -->
+
+    <div class="right-panel">
+
+        <!-- Header -->
+
+        <div class="header">
+
+            <h1>
+                DAILY
+                <span>
+                    WORKFLOW
+                </span>
+            </h1>
+
+            <p>
+                Focus • Plan • Execute • Grow
+            </p>
+
+            <button id="themeToggle">
+            🌙
+            </button>
+
+        </div>
+
+        <!-- Midnight -->
+
+        <div class="task-card">
+
+            <div class="task-title">
+
+                🌙 MIDNIGHT
+
+            </div>
+
+            <label>
+                <input type="checkbox" class="task">
+                Prepared Manga
+            </label>
+
+            <label>
+                <input type="checkbox" class="task">
+                Check Translator
+            </label>
+
+            <label>
+                <input type="checkbox" class="task">
+                Check Paid Update
+            </label>
+
+            <label>
+                <input type="checkbox" class="task">
+                Ads Sent & Post
+            </label>
+
+        </div>
+
+        <!-- Manhwa -->
+
+        <div class="task-card">
+
+            <div class="task-title">
+
+                📚 12 AM MANHWA
+
+            </div>
+
+            <label>
+                <input type="checkbox" class="task">
+                Check Translator
+            </label>
+
+            <label>
+                <input type="checkbox" class="task">
+                Check Chapters
+            </label>
+
+            <label>
+                <input type="checkbox" class="task">
+                Ads Sent & Post
+            </label>
+
+        </div>
+
+        <!-- Hempire -->
+
+        <div class="task-card">
+
+            <div class="task-title">
+
+                👑 HEMPIRE
+
+            </div>
+
+            <label>
+                <input type="checkbox" class="task">
+                Translate File
+            </label>
+
+            <label>
+                <input type="checkbox" class="task">
+                Encode Video
+            </label>
+
+            <label>
+                <input type="checkbox" class="task">
+                Prepared
+            </label>
+
+            <label>
+                <input type="checkbox" class="task">
+                Paid Update
+            </label>
+
+            <label>
+                <input type="checkbox" class="task">
+                Ads Sent & Post
+            </label>
+
+        </div>
+
+        <!-- TikTok -->
+
+        <div class="task-card">
+
+            <div class="task-title">
+
+                🎵 TIKTOK MARKETING
+
+            </div>
+
+            <label>
+                <input type="checkbox" class="task">
+                Daily 1 Post
+            </label>
+
+        </div>
+
+        <!-- Game -->
+
+        <div class="task-card">
+
+            <div class="task-title">
+
+                🎮 MIDNIGHT GAME
+
+            </div>
+
+            <label>
+                <input type="checkbox" class="task">
+                Test Game
+            </label>
+
+            <label>
+                <input type="checkbox" class="task">
+                Prepared
+            </label>
+
+            <label>
+                <input type="checkbox" class="task">
+                Ads Sent & Post
+            </label>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
